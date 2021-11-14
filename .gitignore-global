@@ -1,0 +1,14 @@
+# Vscode
+.vscode
+
+# IntelliJ IDEA
+.idea
+
+# Python compiled bytecode 
+*.pyc
+
+# Temporary files
+.~*
+
+# Python cache folder
+__pycache__
