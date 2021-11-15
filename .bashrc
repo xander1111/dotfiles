@@ -121,7 +121,7 @@ fi
 # Custom aliases
 alias g='git status'
 alias dgpu='export __NV_PRIME_RENDER_OFFLOAD=1 && export __GLX_VENDOR_LIBRARY_NAME=nvidia && echo "Programs will now run on the dGPU"'
-alias igpu='export __NV_PRIME_RENDER_OFFLOAD=0 && export __GLX_VENDOR_LIBRARY_NAME=amd && echo "Programs will now run on the iGPU"'
+alias igpu='unset __NV_PRIME_RENDER_OFFLOAD && unset __GLX_VENDOR_LIBRARY_NAME && echo "Programs will now run on the iGPU"'
 
 # Custom shell prompt
 
