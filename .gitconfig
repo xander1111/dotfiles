@@ -1,0 +1,7 @@
+[user]
+	name = Xander Bailey
+	email = xander.bailey@gmail.com
+[core]
+	excludesFile = /home/xander/.gitignore-global
+[init]
+	defaultBranch = main
