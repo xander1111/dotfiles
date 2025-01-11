@@ -12,3 +12,6 @@
 
 # Python cache folder
 __pycache__
+
+# Node modules folder
+node_modules/
