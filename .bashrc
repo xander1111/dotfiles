@@ -140,10 +140,6 @@ export NVM_DIR="$HOME/.nvm"
 
 export PATH=~/.local/share/gem/ruby/3.0.0/bin:/home/xander/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/bin:/var/lib/flatpak/exports/bin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/var/lib/snapd/snap/bin:/home/xander/.local/share/JetBrains/Toolbox/scripts:~/.rbenv/shims:~/.rbenv/bin:/home/xander/development/flutter/bin
 
-# Add google chrome variable for flutter
-export CHROME_EXECUTABLE=/usr/bin/google-chrome-stable
-
-
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 export PATH="$PATH:$HOME/.rvm/bin"
 
