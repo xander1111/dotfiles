@@ -30,6 +30,18 @@ zstyle ':vcs_info:*' stagedstr '+'
 
 zstyle ':vcs_info:git:*' formats "[%b%u%c]"
 
+zstyle ':vcs_info:git*+set-message:*' hooks untracked-git
++vi-untracked-git(){
+    if [[ $(git rev-parse --is-inside-work-tree 2> /dev/null) == 'true' ]] && \
+        git status --porcelain | grep '??' &> /dev/null ; then
+        # This will show the marker if there are any untracked files in repo.
+        # If instead you want to show the marker only if there are untracked
+        # files in $PWD, use:
+        #[[ -n $(git ls-files --others --exclude-standard) ]] ; then
+        hook_com[staged]+='%%'
+    fi
+}
+
 setopt prompt_subst
 PS1='%F{4}%n@%m%F{2}[%*]${vcs_info_msg_0_}%f:%F{6}%1~%f$ '
 
